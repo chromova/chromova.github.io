@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <html lang="tr">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Chromova</title>
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box}
+body{background:#080c14;color:#fff;font-family:sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center}
+h1{font-size:36px;background:linear-gradient(135deg,#00f5ff,#bf5fff,#ffd700);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}
+  .sub{color:rgba(255,255,255,0.5);font-size:13px;letter-spacing:3px;margin-bottom:32px}
+.box{background:rgba(0,245,255,0.08);border:2px solid rgba(0,245,255,0.3);border-radius:20px;padding:24px;max-width:340px;width:100%;margin-bottom:24px}
+.box h2{font-size:18px;color:#00f5ff;margin-bottom:8px}
+.box p{font-size:13px;color:rgba(255,255,255,0.7);margin-bottom:12px}
+.code{font-family:monospace;font-size:28px;font-weight:bold;color:#ffd700;letter-spacing:6px;background:rgba(255,215,0,0.1);border-radius:10px;padding:12px 20px;margin-bottom:16px;display:inline-block}
+.reward{color:#39ff14;font-size:14px;font-weight:bold;margin-bottom:20px}
+.btn{display:inline-block;background:#000;color:#fff;text-decoration:none;border-radius:12px;padding:14px 28px;font-size:15px;border:1px solid rgba(255,255,255,0.2)}
+footer{margin-top:40px;color:rgba(255,255,255,0.2);font-size:11px}
+</style>
+  <script>
+  window.onload=function(){
+var r=new URLSearchParams(window.location.search).get('ref');
+var u='https://apps.apple.com/app/chromova/id6761496887';
+if(r){document.getElementById('ib').style.display='block';document.getElementById('rc').textContent=r;document.getElementById('b1').href=u;}
+else{document.getElementById('nb').style.display='block';document.getElementById('b2').href=u;}
+};
+</script>
+  </head>
+  <body>
+  <h1>Chromova</h1>
+  <p class="sub">RENK · SAYI · STRATEJI</p>
+  <div class="box" id="ib" style="display:none">
+  <h2>Seni Davet Ettiler!</h2>
+  <p>Chromova'yi indir, kayit ol ve oyun icinde bu kodu gir:</p>
+  <div class="code" id="rc">------</div>
+  <p class="reward">Ikiniz de +100 coin kazanirsiniz!</p>
+  <a href="#" id="b1" class="btn">Chromova'yi Indir</a>
+  </div>
+  <div class="box" id="nb" style="display:none">
+  <h2>Chromova</h2>
+  <p>Renk eslestirme bulmaca oyunu. 144 level.</p>
+  <a href="#" id="b2" class="btn">App Store'dan Indir</a>
+  </div>
+  <footer>2026 ALEGYA CO.</footer>
+  </body>
+  </html>
